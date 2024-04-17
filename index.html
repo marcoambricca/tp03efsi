@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de tareas por proyecto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="input-div nuevo-proyecto">
+            <input type="text" placeholder="Nombre del proyecto" id="input-nombre-proyecto" required>
+            <input type="text" placeholder="Descripcion del proyecto" id="input-desc-proyecto">
+            <button onclick="crearProyecto()">Crear proyecto</button>
+            <div class="input-div nueva-tarea">
+                <input type="text" id="input-desc-tarea" placeholder="Escriba la descripcion de la tarea" required>
+                <input type="text" id="input-proyecto-tarea" placeholder="Nombre de proyecto" required>
+                <input type="text" id="input-vencimiento-tarea" placeholder="Vencimiento de tarea">
+                <button type="submit" onclick="crearTarea()">Agregar tarea</button>
+            </div>
+        </div>
+        <div id="div-proyectos"></div>
+        <div id="buscar">
+            <input type="text" placeholder="Fecha de vencimiento" id="input-busqueda-vencimiento">
+            <button type="submit" onclick="buscarPorVencimiento()">Buscar</button>
+            <div id="resultado"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

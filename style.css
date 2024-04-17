@@ -1,0 +1,64 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.input-div {
+    width: 100%;
+    max-width: 400px;
+}
+
+input[type="text"], button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+    width: calc(100% - 22px);
+    box-sizing: border-box;
+}
+
+input[type="text"]::placeholder{
+    color: white;
+}
+
+button {
+    background-color: #758fe2;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.proyecto {
+    border: 1px solid #555;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #444;
+    color: #fff;
+}
+
+.proyecto .nombre-proyecto {
+    margin-top: 0;
+}
+
+.tarea {
+    background-color: #333;
+    border: 1px solid #555;
+    padding: 5px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.tarea label {
+    margin-top: 0;
+}
+
+.proyecto .tarea {
+    margin-left: 20px;
+}
